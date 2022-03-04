@@ -1,0 +1,125 @@
+.container-banner {
+  background: url('https://devplus.asia/assets/images/devplus/Devplus_missions.png');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+.banner-content {
+  padding-top: -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.text-center {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.title-banner {
+  color: white;
+  font-size: 55px;
+  line-height: 60px;
+  animation: AnimationLeftRight 1.5s;
+}
+.text-banner {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  animation: AnimationRightLeft 1.5s;
+}
+.btn {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.nut {
+  color: white;
+  background-color: coral;
+  padding: 16px 56px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .text-center {
+    margin-top: -40px;
+  }
+  .title-banner {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .text-banner {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner-content {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .container {
+    max-width: 540px;
+  }
+  .text-center {
+    margin-top: -40px;
+  }
+  .title-banner {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .text-banner {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner-content {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 281px) {
+  .container {
+    max-width: 540px;
+  }
+  .text-center {
+    margin-top: -40px;
+  }
+  .title-banner {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .text-banner {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner-content {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .btn .nut {
+    width: 100px;
+    font-size: 10px;
+  }
+}
+
+@keyframes AnimationLeftRight {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes AnimationRightLeft {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
